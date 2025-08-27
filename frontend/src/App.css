@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+.bg-purple {
+    background-color: #1155A6;
+}
+
+.headerWrapper .top-strip {
+    padding: 8px 0px;
+}
+
+.headerWrapper .top-strip p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700
+}
+
+.headerWrapper .header {
+    width: 100%;
+    height: auto;
+    padding: 15px 0px;
+}
+
+.logoWrapper img {
+    width: auto;
+    display: block;      /* removes inline whitespace */
+    margin: 0;           /* ensure no default margin */
+    line-height: 0;   
+}
+
+.headerWrapper .header .part2{
+    gap: 20px; 
+
+}
+
+.headerWrapper .header .part2 .countryDrop {
+    width: 150px;
+    height: 60px;
+    min-width: 150px;
+    color:#000 !important;
+    border: 1px solid rgb(0,0,0,0.2) !important;
+    border-radius: 7px !important;
+    padding: 10px 15px !important;
+    justify-content: space-between !important;
+    text-align: left;
+
+}
+
+
+.headerWrapper .header .part2 button.countryDrop .label {
+   font-size: 12px !important;
+   text-transform: capitalize !important;
+   color: rgb(0,0,0,0.7) !important;
+   line-height: 16px;
+} 
+.headerWrapper .header .part2 button.countryDrop .name {
+    font-size: 12px !important;
+    text-transform: capitalize !important;
+    color: #233a95 !important;
+    font-weight:700;
+    line-height: 16px
+ } 
+ .headerWrapper .header .part2 button.countryDrop span.ml-auto svg{
+    opacity: 0.7;
+ }
+ 
+ .header .headerSearch {
+    width: 60%;
+    height: 60px;
+    background: #f3f4f7;
+    padding: 5px 10px;
+    display: flex;              /* flexbox */
+    align-items: center;        /* vertical center */
+    justify-content: space-between;
+    border-radius: 8px;         /* optional rounded */
+  }
+  .header .headerSearch input {
+    flex: 1;                    /* take all space */
+    background: transparent;
+    outline: none;
+    font-size: 12px;
+    border: none;
+    padding: 0 10px;
+  }
+  .header .headerSearch button {
+    min-width: 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;              /* center the icon */
+    align-items: center;
+    justify-content: center;
+  }
+  .header .headerSearch button svg {
+    font-size: 20px;
+  }
+
+
+  .header .part3 .circle {
+    align-items: center;
+    justify-content: center;
+    min-width: 45px !important;
+    width: 45px !important;
+    border: 1px solid rgb(0,0,0,0.1) !important;
+    border-radius: 50% !important;
+    color:#000;
+  }
+
+    .header .part3 .circle svg {
+        font-size: 22px;
+    }
+
+
+    .cartTab .price {
+        font-size: 18px;
+        font-weight: 700;
+        color: rgb(0,0,0,0.8);
+    }
+    .cartTab .count {
+        position: absolute;
+        top: -6px;
+        right: -4px;
+        background:#ea2b0f;
+        border-radius: 50%;
+        color: #fff;
+        width: 20px;
+        height:20px;
+    }
+    .cartTab button {
+        background: #fff1ee !important;
+    } 
+    .cartTab button svg {
+        color: #ea2b0f;
+    }    
+   
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .headerWrapper .header {
+        padding: 10px 0;
+    }
+
+    .logoWrapper img {
+        height: 50px; /* Reduce logo size */
+    }
+
+    .headerWrapper .header .part2 {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start;
+        gap: 10px; /* Reduce gap */
+    }
+
+    .headerWrapper .header .part2 .countryDrop {
+        width: 100%; /* Full width on mobile */
+        height: auto;
+        padding: 10px;
+    }
+
+    .header .headerSearch {
+        width: 100%; /* Full width for search bar */
+    }
+
+    .header .headerSearch input {
+        font-size: 14px; /* Adjust font size for readability */
+    }
+
+    .header .headerSearch button {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headerWrapper .top-strip p {
+        font-size: 10px; /* Smaller text for very small screens */
+    }
+
+    .headerWrapper .header .part2 {
+        gap: 5px; /* Reduce gap further */
+    }
+
+    .headerWrapper .header .part2 .countryDrop {
+        font-size: 12px; /* Adjust font size */
+    }
+
+    .header .headerSearch input {
+        font-size: 12px; /* Smaller font size for input */
+    }
+}
+  
+  
