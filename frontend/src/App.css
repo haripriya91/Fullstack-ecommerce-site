@@ -27,19 +27,24 @@ body {
 .headerWrapper .header {
     width: 100%;
     height: auto;
-    padding: 15px 0px;
+    padding: 25px 0px;
+}
+
+.logoWrapper {
+    display: inline-block;   /* shrink to fit image */
+    margin: 0;
+    padding: 0;
+    line-height: 0;          /* removes text line-height spacing */
 }
 
 .logoWrapper img {
+    height: 65px;
     width: auto;
-    display: block;      /* removes inline whitespace */
-    margin: 0;           /* ensure no default margin */
-    line-height: 0;   
+    display: block;          /* ensures no inline gap */
 }
 
 .headerWrapper .header .part2{
-    gap: 20px; 
-
+    gap: 25px; 
 }
 
 .headerWrapper .header .part2 .countryDrop {
@@ -87,9 +92,9 @@ body {
     flex: 1;                    /* take all space */
     background: transparent;
     outline: none;
-    font-size: 12px;
+    font-size: 13px;
     border: none;
-    padding: 0 10px;
+    padding: 0 12px;
   }
   .header .headerSearch button {
     min-width: 40px;
@@ -104,7 +109,9 @@ body {
     font-size: 20px;
   }
 
-
+  .header .part3 {
+    gap: 10px; 
+  }
   .header .part3 .circle {
     align-items: center;
     justify-content: center;
@@ -120,6 +127,9 @@ body {
     }
 
 
+    .cartTab {
+        gap: 10px; 
+    }
     .cartTab .price {
         font-size: 18px;
         font-weight: 700;
@@ -132,15 +142,72 @@ body {
         background:#ea2b0f;
         border-radius: 50%;
         color: #fff;
-        width: 20px;
-        height:20px;
+        width: 18px;
+        height:18px;
     }
     .cartTab button {
         background: #fff1ee !important;
     } 
     .cartTab button svg {
         color: #ea2b0f;
-    }    
+    } 
+    
+    nav .allCatTab { 
+        background: #2bbef9;
+        padding: 8px 15px !important;
+        border-radius :30px !important;
+    }
+
+    nav .allCatTab *{
+        color: #fff;
+    }
+
+    nav .allCatTab :hover { 
+        background: #2bbef9;
+    }
+    nav .allCatTab .text { 
+        font-weight: 600;
+    }
+    nav .allCatTab .icon1 svg { 
+        font-size: 20px !important;
+    }
+    nav .allCatTab .icon2 svg { 
+        font-size: 15px !important;
+    }
+
+    .navPart2 {
+        display: flex;
+        justify-content: flex-end; /* push links to right */
+    }
+
+    nav .navPart2 ul {
+        margin-bottom: 0px;
+    }
+    nav .navPart2 ul li a{
+        font-size: 15px;
+        font-weight :500;
+        text-decoration: none;
+        color: rgb(0,0,0,0.7);
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        transition: all 0.2s ease-in-out;
+        border-radius: 25px;
+    }
+    nav .navPart2 ul li a:hover{
+        background: #f0faff;
+        color: #2bbef9;
+    }
+
+
+
+@media (min-width: 1300px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1200px;
+    }
+}
+
    
 
 /* Media Queries for Mobile Responsiveness */
